@@ -2,6 +2,14 @@
 
 module.exports = function(environment) {
   var ENV = {
+
+    firebase: {
+      apiKey: "AIzaSyBnhqn4gQIiBcIwCM-IE6768jfnNxaQXm8",
+      authDomain: "emberwiki.firebaseapp.com",
+      databaseURL: "https://emberwiki.firebaseio.com",
+      storageBucket: "firebase-emberwiki.appspot.com",
+    },
+
     modulePrefix: 'emberwiki',
     environment: environment,
     rootURL: '/',
