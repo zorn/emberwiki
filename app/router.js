@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.resource('pages', function () {
+  this.route('pages', function () {
     this.route('new');
   });
 });
