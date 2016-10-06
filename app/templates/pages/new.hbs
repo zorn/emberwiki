@@ -1,7 +1,21 @@
 <h2>New Page</h2>
 
 <div class="new-msg-form">
-    {{input type="text" placeholder="Title" value=title class="title-input"}}
-    {{input type="text" placeholder="Body" value=body class="body-input"}}
-    <button {{action 'addPage'}} class="submit">Submit</button>
+
+    <form {{action 'addPage' on='submit'}}>
+
+      <div class="form-group">
+        <label for="inputTitle">Title:</label>
+        {{input id="inputTitle" type="text" value=title class="form-control" }}
+      </div>
+
+      <div class="form-group">
+        <label for="inputBody">Body:</label>
+        {{textarea id="inputBody" class="form-control" rows="10" value=body style="width:100%;" }}
+      </div>
+
+
+      {{input type="submit" class="btn btn-primary" value="Create Page"}}
+    </form>
+
 </div>
