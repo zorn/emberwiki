@@ -1,0 +1,9 @@
+<h2>Index</h2>
+
+<ul>
+  {{#each model as |page|}}
+    <li>{{page.title}}</li>
+  {{/each}}
+</ul>
+
+<p>{{#link-to 'pages.new'}}New Page{{/link-to}}</p>
