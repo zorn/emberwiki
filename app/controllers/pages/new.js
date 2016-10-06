@@ -12,6 +12,7 @@ export default Ember.Controller.extend({
                 title: '',
                 body: ''
             });
+            this.transitionToRoute('pages');
         }
     }
 });
